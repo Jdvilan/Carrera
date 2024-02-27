@@ -1,0 +1,100 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP5zq2ycP5mIr/JIMTLX+4I"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Metodo de congruencia**"
+      ],
+      "metadata": {
+        "id": "x3RME9UCLhyw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def f(x0):\n",
+        "\n",
+        "  return (5*x0+5) % 29"
+      ],
+      "metadata": {
+        "id": "iNPI4LxALnjJ"
+      },
+      "execution_count": 58,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "xn = 6\n",
+        "\n",
+        "for i in range(32):\n",
+        "    xn1 = f(xn)\n",
+        "    print(xn1)\n",
+        "    xn = xn1"
+      ],
+      "metadata": {
+        "id": "6mEuAEcIXD2g",
+        "outputId": "c924c93a-9b4a-489e-d75b-58d1574c55ed",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 61,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n",
+            "6\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
